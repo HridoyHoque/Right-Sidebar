@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import MiniProfile from './components/MiniProfile'
+import Suggestions from './components/Suggestions'
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <section className='hidden xl:inline-grid md:col-span-1'>
        <div className='fixed top-20'>
        <MiniProfile />
+       <Suggestions />
        </div>
       </section>
     </div>
