@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.my-container {
+  @apply w-full 2xl:max-w-screen-2xl mx-auto
+}
