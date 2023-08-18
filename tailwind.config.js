@@ -6,6 +6,9 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      'black-rgba': 'rgba(0,0,0,0.3)'
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,5 +17,10 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: 
+  [
+    require("daisyui"),
+    require('tailwind-scrollbar-hide'),
+    require('tailwind-scroll-behavior')()
+  ],
 }
